@@ -26,7 +26,9 @@ public class Exemplo1 {
         System.out.println("O resultado da divisão de A/B é " + c);
         c = a*b;
         System.out.println("O resultado da multiplicação de A*B é " + c);
-        
+        // O tipo String não é nativo
+	String nome = "Fabio";
+	System.out.println(nome);
         
         
     }
