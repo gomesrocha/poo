@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+* Materiais de aula da disciplina de Programação Orientada a Objetos
+* Turma 2017.2
+* Universidade Tiradentes
  */
 package Aula1;
 
@@ -10,7 +10,8 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Rocha
+ * @author Prof. Fabio Gomes Rocha
+ * @email fabio.gomes@souunit.com.br
  */
 public class Exemplo2 {
 	public static void main(String[] args) {
