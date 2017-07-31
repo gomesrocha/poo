@@ -32,7 +32,12 @@ public class Exemplo1 {
         // O tipo String não é nativo
 	String nome = "Fabio";
 	System.out.println(nome);
-        
+	float d;
+	d = a/b*c+0.5f;
+	System.out.println("O resultado de A/B*C+0,5 usando ponto flutuante é " + d);
+        double e;
+	e = d/c*0.5;
+	System.out.println("O resultado de d/c*0.5 usando double é " + e);
         
     }
     
