@@ -16,11 +16,37 @@ public class Exercicio4 {
     public static void main(String[] args) {
         Calendar cal = Calendar.getInstance();
         int dia, mes, ano;
-        mes = cal.get(Calendar.MONTH) +1;
+        String mestexto="";
+        mes = cal.get(Calendar.MONTH);
         dia = cal.get(Calendar.DAY_OF_MONTH);
         ano = cal.get(Calendar.YEAR);
-        JOptionPane.showMessageDialog(null, "Hoje é dia " + dia + " do mês "
-                + mes +  " de " + ano);
+        if(mes==0){
+            mestexto="Janeiro";
+        }else if(mes==1){
+            mestexto="Fevereiro";
+        }else if(mes==2){
+            mestexto="Março";
+        }else if(mes==3){
+            mestexto="Abril";
+        }else if(mes==4){
+            mestexto="Maio";
+        }else if(mes==5){
+            mestexto="Junho";
+        }else if(mes==6){
+            mestexto="Julho";
+        }else if(mes==7){
+            mestexto="Agosto";
+        }else if(mes==8){
+            mestexto="Setembro";
+        }else if(mes==9){
+            mestexto="Outubro";
+        }else if(mes==10){
+            mestexto="Novembro";
+        }else if(mes==11){
+            mestexto="Dezembro";
+        }
+        JOptionPane.showMessageDialog(null, "Hoje é dia " + dia + " de "
+                + mestexto +  " de " + ano);
     }
     
 }
