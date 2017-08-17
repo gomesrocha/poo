@@ -11,17 +11,8 @@ import javax.swing.JOptionPane;
  *
  * @author 10361
  */
-public class Paciente {
-   private String nome;
-   private String dtNasc;
-   private String logradouro;
-   private String numero;
-   private String complemento;
-   private String cep;
-   private String bairro;
-   private String cidade;
-   private String email;
-   private String telefone;
+public class Paciente extends Pessoa{
+   
    private String convenio;
    
    public void cadastrarPaciente(){

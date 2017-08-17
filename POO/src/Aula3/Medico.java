@@ -11,22 +11,10 @@ import javax.swing.JOptionPane;
  *
  * @author 10361
  */
-public class Medico {
-   private String nome;
+public class Medico extends Pessoa{
    private String crm;
-   private String dtNasc;
-   private String logradouro;
-   private String numero;
-   private String complemento;
-   private String cep;
-   private String bairro;
-   private String cidade;
-   private String uf;
-   private String cpf;
-   private String rg;
-   private String email;
-   private String telefone;
    private String celular;
+   
    public void cadastrarMedico(){
           nome = JOptionPane.showInputDialog("Entre com seu nome");
       dtNasc = JOptionPane.showInputDialog("Entre com a data de nascimento");
