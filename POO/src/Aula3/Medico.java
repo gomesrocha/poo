@@ -16,20 +16,8 @@ public class Medico extends Pessoa{
    private String celular;
    
    public void cadastrarMedico(){
-          nome = JOptionPane.showInputDialog("Entre com seu nome");
-      dtNasc = JOptionPane.showInputDialog("Entre com a data de nascimento");
+      super.cadastrarPessoa();
       crm = JOptionPane.showInputDialog("Entre com o CRM");
-      logradouro = JOptionPane.showInputDialog("Entre com o Endereço");
-      numero = JOptionPane.showInputDialog("Entre com o numero");
-      complemento = JOptionPane.showInputDialog("Entre com o Complemento");
-      cep = JOptionPane.showInputDialog("Entre com o CEP");
-      bairro = JOptionPane.showInputDialog("Entre com o bairro");
-      cidade = JOptionPane.showInputDialog("Entre com a cidade");
-      uf = JOptionPane.showInputDialog("Entre com o UF");
-      cpf = JOptionPane.showInputDialog("Entre com o CPF");
-      rg = JOptionPane.showInputDialog("Entre com o RG");
-      email = JOptionPane.showInputDialog("Entre com o email");
-      telefone = JOptionPane.showInputDialog("Entre com o celular");
       celular = JOptionPane.showInputDialog("Entre com o celular");
       
 
