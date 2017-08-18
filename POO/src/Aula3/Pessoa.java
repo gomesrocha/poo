@@ -35,7 +35,6 @@ public class Pessoa {
       bairro = JOptionPane.showInputDialog("Entre com o bairro");
       cidade = JOptionPane.showInputDialog("Entre com a cidade");
       uf = JOptionPane.showInputDialog("Entre com o UF");
-      
       cpf = JOptionPane.showInputDialog("Entre com o CPF");
       while(cpf.length()!=11){
          JOptionPane.showMessageDialog(null, "CPF inválido");
