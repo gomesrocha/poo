@@ -21,20 +21,9 @@ public class Medico extends Pessoa{
       celular = JOptionPane.showInputDialog("Entre com o celular");
    }
    public void listarMedico(){ 
-      JOptionPane.showMessageDialog(null, "Nome: " + nome
-              + "\nData de Nascimento: " + dtNasc
+      
+      JOptionPane.showMessageDialog(null, super.listarPessoa() 
               + "\nCRM: " + crm
-              + "\nEndereço: " + logradouro
-              + "\nNumero: " + numero
-              + "\nComplemento: " + complemento
-              + "\nCEP: " + cep
-              + "\nBairro: " + bairro
-              + "\nCidade: " + cidade
-              + "\nEstado: " + uf
-              + "\nCPF: " + cpf
-              + "\nRG: " + rg
-              + "\nE-Mail: " + email
-              + "\nTelefone: " + telefone
               + "\nCelular: " + celular);
       
    }

@@ -45,6 +45,21 @@ public class Pessoa {
       telefone = JOptionPane.showInputDialog("Entre com o celular");
    }
    
-
+   public String listarPessoa(){
+       String dados = "Nome: " + nome
+              + "\nData de Nascimento: " + dtNasc
+              + "\nEndereço: " + logradouro
+              + "\nNumero: " + numero
+              + "\nComplemento: " + complemento
+              + "\nCEP: " + cep
+              + "\nBairro: " + bairro
+              + "\nCidade: " + cidade
+              + "\nEstado: " + uf
+              + "\nCPF: " + cpf
+              + "\nRG: " + rg
+              + "\nE-Mail: " + email
+              + "\nTelefone: " + telefone;
+       return dados;
+   }
    
 }

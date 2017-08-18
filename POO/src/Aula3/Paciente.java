@@ -20,15 +20,7 @@ public class Paciente extends Pessoa {
       convenio = JOptionPane.showInputDialog("Entre com o convênio");
    }
    public void listarPaciente() {
-      JOptionPane.showMessageDialog(null, "Nome: " + nome
-              + "\nData de Nascimento: " + dtNasc
-              + "\nEndereço: " + logradouro
-              + "\nNumero: " + numero
-              + "\nComplemento: " + complemento
-              + "\nCEP: " + cep
-              + "\nBairro: " + bairro
-              + "\nCidade: " + cidade
-              + "\nE-Mail: " + email
+      JOptionPane.showMessageDialog(null, super.listarPessoa()
               + "\nConvênio: " + convenio);
    }
 
