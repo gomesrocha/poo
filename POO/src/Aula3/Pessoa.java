@@ -12,6 +12,7 @@ import javax.swing.JOptionPane;
  * @author 10361
  */
 public class Pessoa {
+
    protected String nome;
    protected String dtNasc;
    protected String cpf;
@@ -25,7 +26,8 @@ public class Pessoa {
    protected String uf;
    protected String email;
    protected String telefone;
-   public void cadastrarPessoa(){
+
+   public void cadastrarPessoa() {
       nome = JOptionPane.showInputDialog("Entre com seu nome");
       dtNasc = JOptionPane.showInputDialog("Entre com a data de nascimento");
       logradouro = JOptionPane.showInputDialog("Entre com o Endereço");
@@ -36,7 +38,7 @@ public class Pessoa {
       cidade = JOptionPane.showInputDialog("Entre com a cidade");
       uf = JOptionPane.showInputDialog("Entre com o UF");
       cpf = JOptionPane.showInputDialog("Entre com o CPF");
-      while(cpf.length()!=11){
+      while (cpf.length() != 11) {
          JOptionPane.showMessageDialog(null, "CPF inválido");
          cpf = JOptionPane.showInputDialog("Entre com o CPF");
       }
@@ -44,9 +46,9 @@ public class Pessoa {
       email = JOptionPane.showInputDialog("Entre com o email");
       telefone = JOptionPane.showInputDialog("Entre com o celular");
    }
-   
-   public String listarPessoa(){
-       String dados = "Nome: " + nome
+
+   public String listarPessoa() {
+      String dados = "Nome: " + nome
               + "\nData de Nascimento: " + dtNasc
               + "\nEndereço: " + logradouro
               + "\nNumero: " + numero
@@ -59,7 +61,7 @@ public class Pessoa {
               + "\nRG: " + rg
               + "\nE-Mail: " + email
               + "\nTelefone: " + telefone;
-       return dados;
+      return dados;
    }
-   
+
 }
