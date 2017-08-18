@@ -19,12 +19,8 @@ public class Medico extends Pessoa{
       super.cadastrarPessoa();
       crm = JOptionPane.showInputDialog("Entre com o CRM");
       celular = JOptionPane.showInputDialog("Entre com o celular");
-      
-
-      
    }
-   public void listarMedico(){
-  
+   public void listarMedico(){ 
       JOptionPane.showMessageDialog(null, "Nome: " + nome
               + "\nData de Nascimento: " + dtNasc
               + "\nCRM: " + crm

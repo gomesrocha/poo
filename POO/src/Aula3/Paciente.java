@@ -19,7 +19,6 @@ public class Paciente extends Pessoa {
       super.cadastrarPessoa();
       convenio = JOptionPane.showInputDialog("Entre com o convênio");
    }
-
    public void listarPaciente() {
       JOptionPane.showMessageDialog(null, "Nome: " + nome
               + "\nData de Nascimento: " + dtNasc
