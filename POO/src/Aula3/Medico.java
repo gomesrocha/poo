@@ -13,18 +13,26 @@ import javax.swing.JOptionPane;
  */
 public class Medico extends Pessoa{
    private String crm;
-   private String celular;
+   private Telefone celular;
+   private Endereco endProf;
+
+   public Medico() {
+      celular = new Telefone();
+      endProf = new Endereco();
+   }
    
    public void cadastrarMedico(){
       super.cadastrarPessoa();
       crm = JOptionPane.showInputDialog("Entre com o CRM");
-      celular = JOptionPane.showInputDialog("Entre com o celular");
+      celular.cadastrarTelefone();
+      endProf.cadastrarEndereco();
    }
    public void listarMedico(){ 
       
       JOptionPane.showMessageDialog(null, super.listarPessoa() 
               + "\nCRM: " + crm
-              + "\nCelular: " + celular);
+              + celular.listarTelefone()
+              + endProf.listarEndereco());
       
    }
    

@@ -19,10 +19,12 @@ public class Pessoa {
    protected String rg;
    protected Endereco endereco;
    protected String email;
-   protected String telefone;
+   protected Telefone telefone;
+   
 
   public Pessoa() {
       endereco = new Endereco();
+      telefone = new Telefone();
    }
 
    
@@ -36,8 +38,8 @@ public class Pessoa {
       }
       rg = JOptionPane.showInputDialog("Entre com o RG");
       email = JOptionPane.showInputDialog("Entre com o email");
-      telefone = JOptionPane.showInputDialog("Entre com o celular");
       endereco.cadastrarEndereco();
+      telefone.cadastrarTelefone();
    }
 
    public String listarPessoa() {
@@ -46,7 +48,7 @@ public class Pessoa {
               + "\nCPF: " + cpf
               + "\nRG: " + rg
               + "\nE-Mail: " + email
-              + "\nTelefone: " + telefone
+              + telefone.listarTelefone()
               + endereco.listarEndereco();
       return dados;
    }
