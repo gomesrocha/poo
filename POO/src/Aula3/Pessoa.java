@@ -5,6 +5,8 @@
  */
 package Aula3;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javax.swing.JOptionPane;
 
 /**
@@ -29,8 +31,16 @@ public class Pessoa {
 
    
    public void cadastrarPessoa() {
+      String padrao="^[_a-z0-9-\\+]+(\\.[_a-z0-9-]+)*"
+      +"@[a-z0-9-]+(\\.[a-z0-9]+)*(\\.[a-z]{2,4})$";
+      //"\\b[a-z0-9._%-]+@[a-z0-9.-]+\\.[a-z]{2,4}\\b"
+      Pattern emailp = Pattern.compile(padrao);
+    
+      Pattern datap = Pattern.compile("\\d{2}/\\d{2}/\\d{4}");
       nome = JOptionPane.showInputDialog("Entre com seu nome");
       dtNasc = JOptionPane.showInputDialog("Entre com a data de nascimento");
+      Matcher datam = datap.matcher(dtNasc);
+      System.out.println(datam.find());
       cpf = JOptionPane.showInputDialog("Entre com o CPF");
       while (cpf.length() != 11) {
          JOptionPane.showMessageDialog(null, "CPF inválido");
@@ -38,6 +48,16 @@ public class Pessoa {
       }
       rg = JOptionPane.showInputDialog("Entre com o RG");
       email = JOptionPane.showInputDialog("Entre com o email");
+      email = email.trim().toLowerCase();
+      Matcher emailm = emailp.matcher(email);
+      
+      while(emailm.matches()==false){
+         JOptionPane.showMessageDialog(null, "Email incorreto");
+         email = JOptionPane.showInputDialog("Entre com o email");
+         email = email.trim().toLowerCase();
+         emailm = emailp.matcher(email);
+         
+      }
       endereco.cadastrarEndereco();
       telefone.cadastrarTelefone();
    }
