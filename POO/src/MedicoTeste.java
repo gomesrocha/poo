@@ -16,6 +16,7 @@ public class MedicoTeste {
         md = new Medico();
         md.cadastrarMedico();
         medico[i]=md;
+        
      }
      for(int l=0;l<2;l++){
         md = medico[l];
