@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Aula3;
+package ClinicaSis.model;
 
+import Aula3.Pessoa;
 import javax.swing.JOptionPane;
 
 /**
@@ -23,5 +24,13 @@ public class Paciente extends Pessoa {
       JOptionPane.showMessageDialog(null, super.listarPessoa()
               + "\nConvênio: " + convenio);
    }
+
+    public String getConvenio() {
+        return convenio;
+    }
+
+    public void setConvenio(String convenio) {
+        this.convenio = convenio;
+    }
 
 }

@@ -5,6 +5,8 @@
  */
 package Aula3;
 
+import ClinicaSis.model.Medico;
+import ClinicaSis.model.Paciente;
 import javax.swing.JOptionPane;
 
 /**

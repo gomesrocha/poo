@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Aula3;
+package ClinicaSis.model;
 
 import javax.swing.JOptionPane;
 
@@ -23,5 +23,21 @@ public class Telefone {
               + "\nTelefone:" + fone;
               return dados;
    }
+
+    public short getDdd() {
+        return ddd;
+    }
+
+    public void setDdd(short ddd) {
+        this.ddd = ddd;
+    }
+
+    public String getFone() {
+        return fone;
+    }
+
+    public void setFone(String fone) {
+        this.fone = fone;
+    }
    
 }

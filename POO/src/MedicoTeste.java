@@ -1,5 +1,5 @@
 
-import Aula3.Medico;
+import ClinicaSis.model.Medico;
 
 /*
  * To change this license header, choose License Headers in Project Properties.

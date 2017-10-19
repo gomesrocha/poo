@@ -7,8 +7,8 @@ package ClinicaSis.view;
 
 /**
  *
- * @author Rocha
+ * @author root
  */
-public class PessoaView {
-	
+public class PacienteView {
+    
 }
