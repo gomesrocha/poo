@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Aula3;
+package ClinicaSis.model;
 
+import Aula3.Pessoa;
+import ClinicaSis.model.Telefone;
 import javax.swing.JOptionPane;
 
 /**
@@ -68,6 +70,62 @@ public class Medico extends Pessoa{
             irrf = (salarioSemInss - 1903.99)/100 * 27.5;
         }
         salarioLiquido = salarioSemInss - irrf;
+    }
+
+    public String getCrm() {
+        return crm;
+    }
+
+    public void setCrm(String crm) {
+        this.crm = crm;
+    }
+
+    public Telefone getCelular() {
+        return celular;
+    }
+
+    public void setCelular(Telefone celular) {
+        this.celular = celular;
+    }
+
+    public double getSalarioBruto() {
+        return salarioBruto;
+    }
+
+    public void setSalarioBruto(double salarioBruto) {
+        this.salarioBruto = salarioBruto;
+    }
+
+    public double getInss() {
+        return inss;
+    }
+
+    public void setInss(double inss) {
+        this.inss = inss;
+    }
+
+    public double getIrrf() {
+        return irrf;
+    }
+
+    public void setIrrf(double irrf) {
+        this.irrf = irrf;
+    }
+
+    public double getSalarioSemInss() {
+        return salarioSemInss;
+    }
+
+    public void setSalarioSemInss(double salarioSemInss) {
+        this.salarioSemInss = salarioSemInss;
+    }
+
+    public double getSalarioLiquido() {
+        return salarioLiquido;
+    }
+
+    public void setSalarioLiquido(double salarioLiquido) {
+        this.salarioLiquido = salarioLiquido;
     }
    
 }

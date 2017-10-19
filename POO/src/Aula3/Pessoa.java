@@ -5,6 +5,8 @@
  */
 package Aula3;
 
+import ClinicaSis.model.Endereco;
+import ClinicaSis.model.Telefone;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.swing.JOptionPane;
