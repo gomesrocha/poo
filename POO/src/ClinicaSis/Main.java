@@ -5,6 +5,8 @@
  */
 package ClinicaSis;
 
+import ClinicaSis.view.MedicoView;
+
 /**
  *
  * @author Prof. Fabio Gomes Rocha
@@ -12,6 +14,8 @@ package ClinicaSis;
  */
 public class Main {
 	public static void main(String[] args) {
-		
+		MedicoView md = new MedicoView();
+                md.cadastrarMedico();
+                md.listarMedico();
 	}
 }

@@ -7,13 +7,14 @@ package ClinicaSis.model;
 
 import Aula3.Pessoa;
 import ClinicaSis.model.Telefone;
+import java.io.Serializable;
 import javax.swing.JOptionPane;
 
 /**
  *
  * @author 10361
  */
-public class Medico extends Pessoa{
+public class Medico extends Pessoa implements Serializable{
    private String crm;
    private Telefone celular;
    private Endereco endProf;

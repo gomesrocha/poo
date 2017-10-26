@@ -5,6 +5,7 @@
  */
 package ClinicaSis.model;
 
+import java.io.Serializable;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.swing.JOptionPane;
@@ -13,7 +14,8 @@ import javax.swing.JOptionPane;
  *
  * @author Prof. Fabio Gomes Rocha
  */
-public class Pessoa {
+public class Pessoa implements Serializable{
+
 
    protected String nome;
    protected String dtNasc;

@@ -5,13 +5,14 @@
  */
 package ClinicaSis.model;
 
+import java.io.Serializable;
 import javax.swing.JOptionPane;
 
 /**
  *
  * @author 10361
  */
-public class Endereco {
+public class Endereco implements Serializable{
    private String logradouro;
    private String numero;
    private String complemento;
@@ -95,4 +96,5 @@ public class Endereco {
               + "\nEstado: " + uf;
        return dados;
    } 
+   
 }

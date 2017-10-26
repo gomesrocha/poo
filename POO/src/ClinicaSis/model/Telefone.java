@@ -5,13 +5,14 @@
  */
 package ClinicaSis.model;
 
+import java.io.Serializable;
 import javax.swing.JOptionPane;
 
 /**
  *
  * @author 10361
  */
-public class Telefone {
+public class Telefone implements Serializable{
    private short ddd;
    private String fone;
    public void cadastrarTelefone(){

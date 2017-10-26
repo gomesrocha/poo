@@ -6,13 +6,14 @@
 package ClinicaSis.model;
 
 import Aula3.Pessoa;
+import java.io.Serializable;
 import javax.swing.JOptionPane;
 
 /**
  *
  * @author 10361
  */
-public class Paciente extends Pessoa {
+public class Paciente extends Pessoa implements Serializable{
 
    private String convenio;
 
